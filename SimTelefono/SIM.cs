@@ -17,8 +17,7 @@ namespace SimTelefono
 
         public void AggiungiChiamata(string numero, int minuti)
         {
-            // Calcolo costo: aggiungendo 4 prima di dividere per 5, 
-            // otteniamo lo scatto anticipato (es: 1 min -> 1€, 6 min -> 2€)
+            // Calcolo costo
             int costo = (minuti + 4) / 5;
             Credito = Credito - costo;
 

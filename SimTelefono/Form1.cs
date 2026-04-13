@@ -15,7 +15,7 @@ namespace SimTelefono
 
         private void btnSalva_Click(object sender, EventArgs e)
         {
-            // 1. Se la sim non esiste, la crea
+            // Se la sim non esiste, la crea
             if (miaSim == null)
             {
                 miaSim = new Sim(txtNumero.Text, double.Parse(txtCredito.Text));

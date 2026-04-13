@@ -15,8 +15,21 @@ namespace SimTelefono
             this.durata = durata;
         }
 
-        // Proprietà in sola lettura per accedere ai dati
-        public string Destinatario => destinatario;
-        public int Durata => durata;
+        // Proprietà per accedere ai dati
+        public string Destinatario
+        {
+            get
+            {
+                return destinatario;
+            }
+        }
+
+        public int Durata
+        {
+            get
+            {
+                return durata;
+            }
+        }
     }
 }
